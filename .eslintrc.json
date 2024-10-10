@@ -4,6 +4,6 @@
   "rules": {
       "unused-imports/no-unused-imports": "error",
       "import/order": ["error", { "newlines-between": "always" }],
-      "no-unused-vars": "warn" // ou 'off' se preferir
+      "no-unused-vars": "off" // ou 'off' se preferir
   }
 }
