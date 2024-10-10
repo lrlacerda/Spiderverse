@@ -1,3 +1,5 @@
+/* eslint-disable import/order */
+
 // Bibliotecas externas
 import Image, { StaticImageData } from "next/image";
 

@@ -7,3 +7,13 @@
 //       "no-unused-vars": "off" // ou 'off' se preferir
 //   }
 // }
+
+{
+    "extends": ["next/core-web-vitals", "prettier"],
+    "plugins": ["unused-imports", "import"],
+    "rules": {
+        "unused-imports/no-unused-imports": "off", // Desativa essa regra globalmente
+        "import/order": ["error", { "newlines-between": "always" }],
+        "no-unused-vars": "off"
+    }
+}
