@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
-import data from "./heroes.json";
+import heroes from "./heroes.json";
 
 export async function GET() {
-  return NextResponse.json({ data });
+  return NextResponse.json({ data: heroes });
 }
