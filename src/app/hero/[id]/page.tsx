@@ -9,7 +9,9 @@ interface IProps {
 
 async function getData(): Promise<{ data: IHeroData[] }> {
   // const res = await fetch("http://localhost:3000/api/heroes");
-  const res = await fetch("https://spiderverse-iota.vercel.app/api/heroes");
+  // const res = await fetch("https://spiderverse-iota.vercel.app/api/heroes");
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL; // Pega a URL da API da variável de ambiente
+  const res = await fetch(`${apiUrl}/heroes`);
 
   if (!res.ok) {
     throw new Error("Falha ao buscar heróis");
